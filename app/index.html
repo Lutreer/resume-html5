@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='myApp'>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="description" content="a resume with html5 and css3"/>
+	<meta name="keywords" content="resume html5 css3 angular"/>
+	<meta name="Copyright" content="lxuidesigner@gmail.com,https://github.com/Lutreer"/>
+	<meta name="robots" content="all" />
+	<meta name="viewport" content="width=divice-width,initial-scale=1,user-scalable=no"/>
+	<title>My Resume</title>
+
+	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	sssssssssssssssssssssssssssssss
+	
+	<div data-ui-view></div>
+
+	<script src="http://cdn.bootcss.com/angular.js/1.4.0/angular.min.js"></script>
+	<script src="http://cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="js/plugins/angular-resource.min.js"></script>
+	<script src="http://api.map.baidu.com/api?v=2.0&amp;ak=GRaPtLAZFqPgc6GrghXbQ3qG"></script>
+
+	<script src="js/main/app.js"></script>	
+	<script src="js/main/directive.js"></script>
+
+	<script src="js/main/view/myController.js"></script>	
+	<script src="js/main/view/myDirective.js"></script>	
+	<script src="js/main/view/myService.js"></script>
 </body>
 </html>

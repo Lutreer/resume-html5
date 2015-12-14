@@ -1,18 +1,17 @@
 /**
- * Created by lixiang.
+ * Created by lutreer.
  */
 'use strict';
-var app = angular.module('ngTubaApp',['ui.router', 'ngResource']);
+var app = angular.module('myApp',['ui.router', 'ngResource']);
 
 app.config(function($stateProvider, $urlRouterProvider){
-
-	$urlRouterProvider.otherwise('/index');
+	$urlRouterProvider.otherwise('/resume');
 
 	$stateProvider
-		.state('index',{
-			url:'/index',
-			controller: 'myController',
-			//templateUrl:'/templates/tuba.html'
-		});
+		.state('resume', {
+            url: "/resume",
+            template:" my resume",
+            controller:'myController'
+        });
 
 });

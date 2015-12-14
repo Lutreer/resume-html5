@@ -1,5 +1,4 @@
 'use strict'
 
-app.controller('myController', function($scope,tubaFactory){
-
+app.controller('myController', function($scope,myFactory){
 });
