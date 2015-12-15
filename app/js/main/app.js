@@ -2,7 +2,7 @@
  * Created by lutreer.
  */
 'use strict';
-var app = angular.module('myApp',['ui.router', 'ngResource']);
+var app = angular.module('myApp',['ui.router', 'ngResource', 'myController']);
 
 app.config(function($stateProvider, $urlRouterProvider){
 	$urlRouterProvider.otherwise('/resume');
@@ -10,7 +10,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 	$stateProvider
 		.state('resume', {
             url: "/resume",
-            template:" my resume",
+            template:"",
             controller:'myController'
         });
 

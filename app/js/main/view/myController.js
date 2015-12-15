@@ -1,4 +1,6 @@
 'use strict'
+var myController=angular.module('myController',['myService']);
+myController.controller('myController', function($scope,myFactory){
 
-app.controller('myController', function($scope,myFactory){
+
 });

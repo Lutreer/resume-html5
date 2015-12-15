@@ -1,12 +1,27 @@
-$baseFontFamily: Microsoft YaHei;
+$baseFontFamily: "Microsoft YaHei" arial Helvetica "Heiti SC";
 $baseColorBlue: #3598db;
 $baseFontSize: 10px;
 
+$baseColorBlue: #89ABE3;
+$baseColorBlue-d: #89ABE3;
+$baseColorRed: #F2DDDE;;
+$baseColorRed-d: #F7CAC9;
+
 html{
-	width: 100%;
-	height: 100%;
-	margin: 0px;
 	font-size: $baseFontSize;
 }
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: $baseFontFamily;
+	
+}
 
+header{
+	padding:2px 4px;
+	font-size: 2.4rem;
 
+	i{
+		color:$baseColorBlue;
+	}
+}

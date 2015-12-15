@@ -1,5 +1,13 @@
 html {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
   font-size: 10px; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Microsoft YaHei" arial Helvetica "Heiti SC"; }
+
+header {
+  padding: 2px 4px;
+  font-size: 2.4rem; }
+  header i {
+    color: #89ABE3; }
