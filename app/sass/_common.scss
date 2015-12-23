@@ -1,6 +1,6 @@
 $baseFontFamily: "Microsoft YaHei" arial Helvetica "Heiti SC";
 $baseColorBlue: #3598db;
-$baseFontSize: 10px;
+/* $baseFontSize: 10px; */
 
 $baseColorBlue: #89ABE3;
 $baseColorBlue-d: #89ABE3;
@@ -10,7 +10,6 @@ $baseColorRed-d: #F7CAC9;
 body{
 	margin: 0rem;
 	padding: 0rem;
-	font-size: $baseFontSize;
 	font-family: $baseFontFamily;
 }
 h1,h2,h3,h4,h5,h6{
@@ -18,6 +17,6 @@ h1,h2,h3,h4,h5,h6{
 	margin: 0rem;
 }
 h1{
-	font-size: 1.7rem;
+	font-size: 0.32rem;
 }
 
