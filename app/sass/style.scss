@@ -21,7 +21,7 @@ font-size:0.5rem;
 }
 .bbb{
 	margin-left:20px;
-	@include o-px-b-img;
+	@include o-px-b-img(5, 1px 1px 1px 1px);
 }
 footer{
 	width:100%;
@@ -29,6 +29,6 @@ footer{
 	box-sizing: border-box;
 	position: fixed;
 	bottom: 0px;
-	@include o-px-b-img;
+	@include o-px-b-img(4, 1px 0px 0px 0px);;
 }
 
