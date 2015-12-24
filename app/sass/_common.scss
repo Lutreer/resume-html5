@@ -46,3 +46,8 @@ h3{
 [data-dpr="3"] h3{
 	font-size: $fs*1.7*3;
 }
+
+@mixin o-px-b-img{
+	border-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB5JREFUeNpiPnH8zH/G////MzAxAAHTyRNn/wMEGABpvQm9g9TJ1QAAAABJRU5ErkJggg==") 2 0 stretch;
+	border-width: 0px 0px 1px;
+}
