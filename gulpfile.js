@@ -22,7 +22,7 @@ var path = {
 gulp.task('sass', function() {
 	return gulp.src(path.sass)
 		.pipe(sass())
-		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'Firefox >= 20', 'ios 7', 'android 4', '>5%'))
+		.pipe(autoprefixer('last 2 version', 'safari 6', 'ie 9', 'opera 12.1', 'Firefox >= 20', 'ios 7', 'android 4.3', '>5%'))
 		.pipe(gulp.dest(path.css))
 		.pipe(reload({stream: true}));
 });
