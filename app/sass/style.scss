@@ -1,6 +1,6 @@
 @import "common";
 [data-dpr="1"] header{
-	flex-basis: 88px;
+	flex-basis: 44px;
 }
 [data-dpr="2"] header{
 	flex-basis: 88px;
@@ -10,14 +10,16 @@
 }
 header{
 	width: 100%;
+	
 	padding: 0rem 0.2rem;
-	vertical-align: middle;
+	
 	border-bottom: 1px solid $baseColorBlue-d; 
-	line-height: 1.173rem;
 	background-color: $baseColorBlue;
-	box-shadow: 0px 0px 5px #888888;
+	box-shadow: 0rem 0rem .06rem 0rem #808080;
 	h3{
 		color: #fff;
+		height: 88px;
+		vertical-align: middle;
 		text-align: center;
 		font-weight: normal;
 	}
@@ -25,7 +27,7 @@ header{
 
 /* footer */
 [data-dpr="1"] footer{
-	flex-basis: 98px;
+	flex-basis: 49px;
 }
 [data-dpr="2"] footer{
 	flex-basis: 98px;
@@ -47,5 +49,6 @@ footer{
 }
 .content-view-d{
 	overflow: auto;
-	height: 100%;
+	flex-basis: 100%;
+	overflow: auto;
 }
