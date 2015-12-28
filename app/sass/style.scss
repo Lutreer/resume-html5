@@ -1,25 +1,38 @@
 @import "common";
+
+body{
+	overflow: hidden;
+}
+
 [data-dpr="1"] header{
-	flex-basis: 44px;
+	height: 44px;
+	h3{
+		line-height: 44px;
+	}
 }
 [data-dpr="2"] header{
-	flex-basis: 88px;
+	height: 88px;
+	h3{
+		line-height: 88px;
+	}
 }
 [data-dpr="3"] header{
-	flex-basis: 132px;
+	height: 132px;
+	h3{
+		line-height: 132px;
+	}
 }
 header{
 	width: 100%;
-	
 	padding: 0rem 0.2rem;
-	
-	border-bottom: 1px solid $baseColorBlue-d; 
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border-bottom: 0px solid $baseColorBlue-d; 
 	background-color: $baseColorBlue;
-	box-shadow: 0rem 0rem .06rem 0rem #808080;
+	box-shadow: 0rem 0rem .07rem 0rem #808080;
 	h3{
 		color: #fff;
-		height: 88px;
-		vertical-align: middle;
 		text-align: center;
 		font-weight: normal;
 	}
@@ -27,28 +40,68 @@ header{
 
 /* footer */
 [data-dpr="1"] footer{
-	flex-basis: 49px;
+	height: 49px;
 }
 [data-dpr="2"] footer{
-	flex-basis: 98px;
+	height: 98px;
 }
 [data-dpr="3"] footer{
-	flex-basis: 146px;
+	height: 146px;
 }
 footer{
 	width:100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
 	border-top: 1px solid #666;
 	/* @include one-px-border('grey', 1px 0px 0px 0px, 'bold'); */
+
+	ul{
+		padding: 0px;
+		list-style-type:none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;/* 子元素是否换行or换列 */
+		justify-content: flex-start;/* 主轴对齐方式 */
+		align-items: flex-start;/* 侧轴对齐方式 */
+
+		li{
+		}
+	}
 }
 
 /* footer over */
-.content-view{
-	flex-grow: 1;
-	flex-basis: 100%;
+
+.content-frame{	/* 弹性布局 */
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
+	
+	.content-view{
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;/* 子元素是否换行or换列 */
+		justify-content: flex-start;/* 主轴对齐方式 */
+		align-items: flex-start;/* 侧轴对齐方式 */
+	}
+
 }
-.content-view-d{
-	overflow: auto;
-	flex-basis: 100%;
-	overflow: auto;
+[data-dpr="1"] .content-frame{
+	padding-top: 48px;
+	padding-bottom: 49px;
+
+}
+[data-dpr="2"] .content-frame{
+	padding-top: 88px;
+	padding-bottom: 98px;
+
+}
+[data-dpr="3"] .content-frame{
+	padding-top: 132px;
+	padding-bottom: 146px;
+
 }
