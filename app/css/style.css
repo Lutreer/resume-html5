@@ -15,7 +15,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0rem;
-  margin: 0rem; }
+  margin: 0rem;
+  font-weight: normal; }
 
 [data-dpr="2"] h1 {
   font-size: 21px; }
@@ -80,12 +81,18 @@ header {
 /* footer */
 [data-dpr="1"] footer {
   height: 49px; }
+  [data-dpr="1"] footer ul li a i {
+    font-size: 22px; }
 
 [data-dpr="2"] footer {
   height: 98px; }
+  [data-dpr="2"] footer ul li a i {
+    font-size: 48px; }
 
 [data-dpr="3"] footer {
   height: 146px; }
+  [data-dpr="3"] footer ul li a i {
+    font-size: 66px; }
 
 footer {
   width: 100%;
@@ -95,7 +102,9 @@ footer {
   border-top: 1px solid #666;
   /* @include one-px-border('grey', 1px 0px 0px 0px, 'bold'); */ }
   footer ul {
-    padding: 0px;
+    height: 100%;
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
     list-style-type: none;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -106,15 +115,27 @@ footer {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    /* 子元素是否换行or换列 */
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    /* 主轴对齐方式 */
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    /* 侧轴对齐方式 */ }
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    footer ul li {
+      width: 25%;
+      height: 100%; }
+      footer ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #666;
+        text-align: center; }
+        footer ul li a i {
+          height: 50%; }
+        footer ul li a div {
+          height: 50%;
+          color: #ccc; }
 
 /* footer over */
 .content-frame {

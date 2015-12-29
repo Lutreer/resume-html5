@@ -41,12 +41,41 @@ header{
 /* footer */
 [data-dpr="1"] footer{
 	height: 49px;
+	ul{
+		li{
+			a{
+				i{
+					font-size: 22px;
+				}	
+			}
+		}
+	}
+
 }
 [data-dpr="2"] footer{
 	height: 98px;
+	ul{
+		li{
+			a{
+				i{
+					font-size: 48px;
+				}	
+			}
+		}
+	}
+	
 }
 [data-dpr="3"] footer{
 	height: 146px;
+	ul{
+		li{
+			a{
+				i{
+					font-size: 66px;
+				}	
+			}
+		}
+	}
 }
 footer{
 	width:100%;
@@ -57,15 +86,36 @@ footer{
 	/* @include one-px-border('grey', 1px 0px 0px 0px, 'bold'); */
 
 	ul{
-		padding: 0px;
+		height: 100%;
+		margin: 0px;
+		padding: 10px 0px 0px 0px;
 		list-style-type:none;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: nowrap;/* 子元素是否换行or换列 */
-		justify-content: flex-start;/* 主轴对齐方式 */
-		align-items: flex-start;/* 侧轴对齐方式 */
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
 
 		li{
+			width: 25%;
+			height: 100%;
+			a{
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				text-decoration: none;
+				color: #666;
+				text-align: center;
+
+				i{
+					height: 50%;
+				}
+				div{
+					height: 50%;
+					color: #ccc;
+				}
+
+			}
 		}
 	}
 }
