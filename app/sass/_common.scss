@@ -1,4 +1,4 @@
-$baseFontFamily: "Microsoft YaHei" arial Helvetica "Heiti SC";
+$baseFontFamily: Helvetica "Heiti SC" Droidsansfallback;
 $baseColorBlue: #3598db;
 $fs: 10px;
 
@@ -6,6 +6,7 @@ $baseColorBlue: #89ABE3;
 $baseColorBlue-d: #89ABE3;
 $baseColorRed: #F2DDDE;;
 $baseColorRed-d: #F7CAC9;
+
 html{
 	width: 100%;
 	height: 100%;
@@ -19,6 +20,14 @@ body{
 	margin: 0rem;
 	padding: 0rem;
 	font-family: $baseFontFamily;
+}
+
+
+/* 去掉touch时的灰层 */
+a,button,input,textarea{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);/* 老方法 */
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+	-webkit-user-modify:read-write-plaintext-only; 
 }
 h1,h2,h3,h4,h5,h6{
 	padding: 0rem;
